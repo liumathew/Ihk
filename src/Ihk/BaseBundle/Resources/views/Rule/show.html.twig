@@ -1,0 +1,48 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Rule</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td>{{ entity.price }}</td>
+            </tr>
+            <tr>
+                <th>Dayinweek</th>
+                <td>{{ entity.dayInWeek }}</td>
+            </tr>
+            <tr>
+                <th>Starttime</th>
+                <td>{{ entity.starttime | date('H:i:s')}}</td>
+            </tr>
+            <tr>
+                <th>Endtime</th>
+                <td>{{ entity.endtime | date('H:i:s')}}</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>{{ entity.address }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('rule') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('rule_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

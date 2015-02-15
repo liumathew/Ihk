@@ -1,0 +1,39 @@
+#_index:
+#    resource: "@IhkBaseBundle/Controller/DefaultController.php"
+#    type:     annotation
+#    prefix:   /
+#
+#ihk_base_default:
+#    resource: "@IhkBaseBundle/Controller/DefaultController.php"
+#    type:     annotation
+#    prefix:   /
+#
+#ihk_base_kitchen:
+#    resource: "@IhkBaseBundle/Controller/KitchenController.php"
+#    type:     annotation
+#    prefix:   /kitchen
+
+#_welcome:
+#    path:     /
+#    defaults: { _controller: IhkBundle:Default:index }
+
+
+
+#ihk_base_kitchens:
+#    resource: "@IhkBaseBundle/Controller/KitchensController.php"
+#    type:     annotation
+#    prefix:   /kitchens
+
+#ihk_base_kitchens:
+#    path:      /kitchens
+#    defaults: { _controller: IhkBaseBundle:Kitchen:index }
+
+
+#ihk_base_kitchen_get:
+#    path:      /kitchen/get/{id}
+#    defaults: { _controller: IhkBaseBundle:Kitchen:get }
+
+ihk_base:
+    resource: "@IhkBaseBundle/Controller"
+    type:     annotation
+    prefix:   /

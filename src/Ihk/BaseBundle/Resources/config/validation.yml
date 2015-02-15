@@ -1,0 +1,5 @@
+Ihk\BaseBundle\Entity\Dish:
+    properties:
+        # ...
+        photo:
+            - Image: ~

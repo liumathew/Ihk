@@ -1,0 +1,10 @@
+ihk_base:
+    resource: "@IhkBaseBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation
+
+user_bundle:
+    resource: "@UserBundle/Resources/config/routing.yml"

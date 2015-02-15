@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+
+    <!--<services>-->
+        <!--<service id="ihk_base.example" class="Ihk\BaseBundle\Example">-->
+            <!--<argument type="service" id="service_id" />-->
+            <!--<argument>plain_value</argument>-->
+            <!--<argument>%parameter_name%</argument>-->
+        <!--</service>-->
+		<!--<service id="ihk_base.admin.kitchen" class="Ihk\BaseBundle\Admin\KitchenAdmin">-->
+			<!--<tag name="sonata.admin" manager_type="orm" group="base" label="Kitchen"/>-->
+			<!--<argument />-->
+			<!--<argument>Ihk\BaseBundle\Entity\Kitchen</argument>-->
+			<!--<argument>IhkBaseBundle:KitchenAdmin</argument>-->
+		<!--</service>-->
+		<!--<service id="ihk_base.admin.dish" class="Ihk\BaseBundle\Admin\DishAdmin">-->
+			<!--<tag name="sonata.admin" manager_type="orm" group="base" label="Dish"/>-->
+			<!--<argument />-->
+			<!--<argument>Ihk\BaseBundle\Entity\Dish</argument>-->
+			<!--<argument>IhkBaseBundle:DishAdmin</argument>-->
+		<!--</service>-->
+		<!--<service id="ihk_base.admin.cooker" class="Ihk\BaseBundle\Admin\CookerAdmin">-->
+			<!--<tag name="sonata.admin" manager_type="orm" group="base" label="Cooker"/>-->
+			<!--<argument />-->
+			<!--<argument>Ihk\BaseBundle\Entity\Cooker</argument>-->
+			<!--<argument>IhkBaseBundle:CookerAdmin</argument>-->
+		<!--</service>-->
+		<!--<service id="ihk_base.admin.rule" class="Ihk\BaseBundle\Admin\RuleAdmin">-->
+			<!--<tag name="sonata.admin" manager_type="orm" group="base" label="Rule"/>-->
+			<!--<argument />-->
+			<!--<argument>Ihk\BaseBundle\Entity\Rule</argument>-->
+			<!--<argument>IhkBaseBundle:RuleAdmin</argument>-->
+		<!--</service>-->
+		<!--<service id="ihk_base.admin.address" class="Ihk\BaseBundle\Admin\AddressAdmin">-->
+			<!--<tag name="sonata.admin" manager_type="orm" group="base" label="Address"/>-->
+			<!--<argument />-->
+			<!--<argument>Ihk\BaseBundle\Entity\Address</argument>-->
+			<!--<argument>IhkBaseBundle:AddressAdmin</argument>-->
+		<!--</service>-->
+		<!--<service id="ihk_base.admin.type" class="Ihk\BaseBundle\Admin\TypeAdmin">-->
+			<!--<tag name="sonata.admin" manager_type="orm" group="base" label="Type"/>-->
+			<!--<argument />-->
+			<!--<argument>Ihk\BaseBundle\Entity\Type</argument>-->
+			<!--<argument>IhkBaseBundle:TypeAdmin</argument>-->
+		<!--</service>-->
+    <!--</services>-->
+
+</container>

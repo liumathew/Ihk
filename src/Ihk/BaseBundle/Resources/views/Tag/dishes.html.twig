@@ -1,0 +1,39 @@
+{% extends 'IhkBaseBundle::layout.html.twig' %}
+
+{% block title %}
+	{#{{ entity.company }} is looking for a {{ entity.position }}#}dishes in this tag
+{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	{#<link rel="stylesheet" href="{{ asset('bundles/ibwjobeet/css/job.css') }}" type="text/css" media="all" />#}
+{% endblock %}
+
+{% block leftarea %}
+	<script type="application/javascript">
+		$(document).ready(function(){
+			$('.dishes-vertical').hover(function(){
+						$(this).addClass('mousehover');
+					},function(){
+						$(this).removeClass('mousehover');
+					}
+			);
+		});
+	</script>
+	{% for dish in dishes %}
+	<div class="dishes-vertical">
+		<div class="dish-cover">
+			<img src="http://localhost/{{ dish.photo }}" width="240" height="230">
+		</div>
+		<div class="dish-detail">
+			{{ dish.name }}
+		</div>
+	</div>
+	{% endfor %}
+{% endblock %}
+
+{% block rightarea %}
+<div class="tag-side">
+	{{ tag.name }}
+</div>
+{% endblock %}

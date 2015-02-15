@@ -1,0 +1,31 @@
+{% extends 'IhkBaseBundle::layout.html.twig' %}
+
+{% block title %}
+	{#{{ entity.company }} is looking for a {{ entity.position }}#}all the categories
+{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	{#<link rel="stylesheet" href="{{ asset('bundles/ibwjobeet/css/job.css') }}" type="text/css" media="all" />#}
+{% endblock %}
+
+{% block leftarea %}
+	<div id="category">
+		<table class="entity">
+			{% for category in categories %}
+				<tr class="{{ cycle(['even', 'odd'], loop.index) }}">
+					<td>
+					<a href="{{ path('ihk_base_category.get', { 'id': category.id }) }}">
+					{{ category.name }}
+					</a>
+					</td>
+
+				</tr>
+			{% endfor %}
+		</table>
+	</div>
+{% endblock %}
+
+{% block rightarea %}
+
+{% endblock %}

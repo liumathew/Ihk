@@ -1,0 +1,37 @@
+{% extends 'IhkBaseBundle::layout.html.twig' %}
+
+{% block title %}
+	{#{{ entity.company }} is looking for a {{ entity.position }}#}all the kitchen
+{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	{#<link rel="stylesheet" href="{{ asset('bundles/ibwjobeet/css/job.css') }}" type="text/css" media="all" />#}
+{% endblock %}
+
+{% block leftarea %}
+	<div id="kitchen">
+		{{ kitchen.name }}
+		{{ kitchen.description }}
+		<table class="dishes">
+			{% for dish in dishes %}
+				<tr class="{{ cycle(['even', 'odd'], loop.index) }}">
+					<td>{{ dish.name }}</td>
+					<td>
+						<a href="{{ path('ihk_base_kitchen.get', { 'id': dish.id }) }}">
+							{{ dish.description }}
+						</a>
+					</td>
+					<td>{{ dish.score }}</td>
+
+				</tr>
+			{% endfor %}
+		</table>
+	</div>
+{% endblock %}
+
+{% block rightarea %}
+	{#<h2>{{ cooker.name }}</h2>#}
+	{#<p>{{ cooker.description  }}</p>#}
+	{#{{ address.codeAptNumber }},{{ address.streetNumber }},{{ address.streetName }},{{ address.postCode }}#}
+{% endblock %}

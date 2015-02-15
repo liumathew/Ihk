@@ -1,0 +1,201 @@
+{% extends 'IhkBaseBundle::layout.html.twig' %}
+
+{% block title %}
+	home - IHomeKitchen
+{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	{#<link rel="stylesheet" href="{{ asset('bundles/ibwjobeet/css/job.css') }}" type="text/css" media="all" />#}
+{% endblock %}
+
+
+
+{% block leftarea %}
+	<script type="application/javascript">
+		$(document).ready(function(){
+			$('.banner').unslider({
+				speed: 500,               //  The speed to animate each slide (in milliseconds)
+				delay: 3000,              //  The delay between slide animations (in milliseconds)
+				complete: function() {},  //  A function that gets called after every slide animation
+				keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+				dots: true,               //  Display dot navigation
+				fluid: false              //  Support responsive design. May break non-responsive designs
+			});
+		});
+	</script>
+	<div id="menu">
+		tags:
+		{% for tag in tags %}
+		<ul>
+			<li>
+				<a class="" href="{{ path('tag_show_dishes', { 'id': tag.id }) }}">
+					<span class="">{{ tag.name }}</span>
+				</a>
+			</li>
+		</ul>
+		{% endfor %}
+	</div>
+
+	<div id="center">
+		{#<div class="kitchen-new">#}
+			{#<table class="kitchens">#}
+				{#{% for entity in entities %}#}
+					{#<tr class="{{ cycle(['even', 'odd'], loop.index) }}">#}
+						{#<td>{{ entity.name }}</td>#}
+						{#<td>#}
+							{#<a href="{{ path('ihk_base_kitchen.get', { 'id': entity.id }) }}">#}
+								{#{{ entity.description }}#}
+							{#</a>#}
+						{#</td>#}
+						{#<td>{{ entity.score }}</td>#}
+
+					{#</tr>#}
+				{#{% endfor %}#}
+			{#</table>#}
+		{#</div>#}
+
+		<div class="banner">
+			<ul>
+				<li>
+					<div class="dish-cover">
+						<img src="../upload/Desert.jpg" alt="" width="240" height="230">
+					</div>
+					<div class="dish-detail">
+						<a href="">dishname</a>
+						<a href="{{ path('kitchen_show_dishes', { 'id': 1 }) }}">kitchenname</a>
+					</div>
+				</li>
+				<li>
+					<div class="dish-cover">
+						<img src="../upload/Tulips.jpg" alt="" width="240" height="230">
+					</div>
+					<div class="dish-detail">
+						<a href="">dishname</a>
+						<a href="">kitchenname</a>
+					</div>
+				</li>
+				<li>
+					<div class="dish-cover">
+						<img src="../upload/Jellyfish.jpg" alt="" width="240" height="230">
+					</div>
+					<div class="dish-detail">
+						<a href="">dishname</a>
+						<a href="">kitchenname</a>
+					</div>
+				</li>
+				<li>
+					<div class="dish-cover">
+						<img src="../upload/Koala.jpg" alt="" width="240" height="230">
+					</div>
+					<div class="dish-detail">
+						<a href="">dishname</a>
+						<a href="">kitchenname</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="dishes-headline">
+
+		</div>
+
+		<div class="dishes-hot">
+			<ul class="grid">
+				<li>
+					<div class="dishes-grid">
+						<div class="cover">
+							<img src="../upload/Koala.jpg" alt="" width="140" height="110">
+						</div>
+						<div class="dish-name">
+							<a href="">dishname</a>
+						</div>
+						<div class="kitchen-name">
+							<a href="">kitchenname</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="dishes-grid">
+						<div class="cover">
+							<img src="../upload/Koala.jpg" alt="" width="140" height="110">
+						</div>
+						<div class="dish-name">
+							<a href="">dishname</a>
+						</div>
+						<div class="kitchen-name">
+							<a href="">kitchenname</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="dishes-grid">
+						<div class="cover">
+							<img src="../upload/Koala.jpg" alt="" width="140" height="110">
+						</div>
+						<div class="dish-name">
+							<a href="">dishname</a>
+						</div>
+						<div class="kitchen-name">
+							<a href="">kitchenname</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="dishes-grid">
+						<div class="cover">
+							<img src="../upload/Koala.jpg" alt="" width="140" height="110">
+						</div>
+						<div class="dish-name">
+							<a href="">dishname</a>
+						</div>
+						<div class="kitchen-name">
+							<a href="">kitchenname</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="dishes-grid">
+						<div class="cover">
+							<img src="../upload/Koala.jpg" alt="" width="140" height="110">
+						</div>
+						<div class="dish-name">
+							<a href="">dishname</a>
+						</div>
+						<div class="kitchen-name">
+							<a href="">kitchenname</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="dishes-grid">
+						<div class="cover">
+								<img src="../upload/Koala.jpg" alt="" width="140" height="110">
+						</div>
+						<div class="dish-name">
+							<a href="">dishname</a>
+						</div>
+						<div class="kitchen-name">
+							<a href="">kitchenname</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+
+
+	</div>
+{% endblock %}
+
+{% block rightarea %}
+	<p>big wheel</p>
+	<div class="wheel">
+		<div class="wheel-spin">
+
+		</div>
+		<div class="wheel-input">
+
+		</div>
+	</div>
+{% endblock %}
