@@ -59,7 +59,7 @@
       <file leaf-file-name="composer.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="45" selection-start="622" selection-end="622" vertical-scroll-proportion="0.4741533" vertical-offset="57" max-vertical-offset="1292">
+            <state line="25" column="6" selection-start="903" selection-end="903" vertical-scroll-proportion="0.74509805" vertical-offset="57" max-vertical-offset="1292">
               <folding />
             </state>
           </provider>
@@ -77,10 +77,8 @@
       <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Ihk/UserBundle/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="-12.214286" vertical-offset="38" max-vertical-offset="608">
-              <folding>
-                <element signature="e#80#122#0" expanded="true" />
-              </folding>
+            <state line="20" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="608">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -865,16 +863,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ihk/UserBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="-12.214286" vertical-offset="38" max-vertical-offset="608">
-          <folding>
-            <element signature="e#80#122#0" expanded="true" />
-          </folding>
+        <state line="20" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="608">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="45" selection-start="622" selection-end="622" vertical-scroll-proportion="0.4741533" vertical-offset="57" max-vertical-offset="1292">
+        <state line="25" column="6" selection-start="903" selection-end="903" vertical-scroll-proportion="0.74509805" vertical-offset="57" max-vertical-offset="1292">
           <folding />
         </state>
       </provider>
