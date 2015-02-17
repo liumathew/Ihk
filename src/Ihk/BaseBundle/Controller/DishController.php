@@ -44,12 +44,19 @@ class DishController extends Controller
      */
     public function createAction(Request $request)
     {
+
         $entity = new Dish();
         $form = $this->createCreateForm($entity);
         $form->handleRequest($request);
 
         if ($form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
+			$em = $this->getDoctrine()->getManager();
+
+			$ownerId = $this->getUser()->getId();
+			$kitchen = $em->getRepository('IhkBaseBundle:Kitchen')->findOneByOwnerId($ownerId);
+			$kitchenId = $kitchen->getId();
+			$entity->setKitchenId($kitchenId);
+
             $em->persist($entity);
             $em->flush();
 
@@ -71,6 +78,8 @@ class DishController extends Controller
      */
     private function createCreateForm(Dish $entity)
     {
+
+
         $form = $this->createForm(new DishType(), $entity, array(
             'action' => $this->generateUrl('dish_create'),
             'method' => 'POST',
@@ -141,6 +150,13 @@ class DishController extends Controller
             throw $this->createNotFoundException('Unable to find Dish entity.');
         }
 
+		$kitchenId = $entity->getKitchenId();
+		$kitchen   = $em->getRepository('IhkBaseBundle:Kitchen')->find($kitchenId);
+
+		if (!$kitchen->isOwner($this->getUser())) {
+			throw $this->createAccessDeniedException();
+		}
+
         $editForm = $this->createEditForm($entity);
         $deleteForm = $this->createDeleteForm($id);
 
@@ -178,13 +194,20 @@ class DishController extends Controller
      */
     public function updateAction(Request $request, $id)
     {
-        $em = $this->getDoctrine()->getManager();
+		$em = $this->getDoctrine()->getManager();
 
         $entity = $em->getRepository('IhkBaseBundle:Dish')->find($id);
 
         if (!$entity) {
             throw $this->createNotFoundException('Unable to find Dish entity.');
         }
+
+		$kitchenId = $entity->getKitchenId();
+		$kitchen   = $em->getRepository('IhkBaseBundle:Kitchen')->find($kitchenId);
+
+		if (!$kitchen->isOwner($this->getUser())) {
+			throw $this->createAccessDeniedException();
+		}
 
         $deleteForm = $this->createDeleteForm($id);
         $editForm = $this->createEditForm($entity);
@@ -220,6 +243,13 @@ class DishController extends Controller
             if (!$entity) {
                 throw $this->createNotFoundException('Unable to find Dish entity.');
             }
+
+			$kitchenId = $entity->getKitchenId();
+			$kitchen   = $em->getRepository('IhkBaseBundle:Kitchen')->find($kitchenId);
+
+			if (!$kitchen->isOwner($this->getUser())) {
+				throw $this->createAccessDeniedException();
+			}
 
             $em->remove($entity);
             $em->flush();

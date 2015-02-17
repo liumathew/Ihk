@@ -12,4 +12,18 @@ use Doctrine\ORM\EntityRepository;
  */
 class KitchenRepository extends EntityRepository
 {
+	public function findOneByOwnerId($id)
+	{
+		$query = $this->getEntityManager()
+			->createQuery(
+				'SELECT p FROM IhkBaseBundle:Kitchen p where p.ownerId =:id'
+			)
+			->setParameter('id', $id);
+
+		try {
+			return $query->getSingleResult();
+		} catch (\Doctrine\ORM\NoResultException $e) {
+			return null;
+		}
+	}
 }

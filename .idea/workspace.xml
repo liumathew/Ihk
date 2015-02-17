@@ -23,106 +23,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DishController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Controller/DishController.php">
+      <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="70" selection-start="2788" selection-end="2788" vertical-scroll-proportion="0.0" vertical-offset="2128" max-vertical-offset="4807">
+            <state line="29" column="16" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="1615">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views/Dish/show.html.twig">
+      <file leaf-file-name="KitchenRepository.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/KitchenRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1102">
+            <state line="14" column="36" selection-start="275" selection-end="291" vertical-scroll-proportion="-9.5" vertical-offset="0" max-vertical-offset="665">
               <folding>
-                <marker date="1419460340886" expanded="true" signature="107:963" placeholder="..." />
-                <marker date="1419460340886" expanded="true" signature="123:950" placeholder="..." />
-                <marker date="1419460340886" expanded="true" signature="140:227" placeholder="..." />
-                <marker date="1419460340886" expanded="true" signature="244:335" placeholder="..." />
-                <marker date="1419460340886" expanded="true" signature="352:457" placeholder="..." />
-                <marker date="1419460340886" expanded="true" signature="474:567" placeholder="..." />
-                <marker date="1419460340886" expanded="true" signature="584:677" placeholder="..." />
-                <marker date="1419460340886" expanded="true" signature="694:815" placeholder="..." />
-                <marker date="1419460340886" expanded="true" signature="832:933" placeholder="..." />
-                <marker date="1419460340886" expanded="true" signature="1000:1255" placeholder="..." />
-                <marker date="1419460340886" expanded="true" signature="1009:1099" placeholder="..." />
-                <marker date="1419460340886" expanded="true" signature="1047:1089" placeholder="..." />
-                <marker date="1419460340886" expanded="true" signature="1108:1212" placeholder="..." />
-                <marker date="1419460340886" expanded="true" signature="1172:1202" placeholder="..." />
+                <marker date="1424134691025" expanded="true" signature="360:443" placeholder="SELECT p FRO..IhkBaseBundle..." />
+                <marker date="1424134691025" expanded="true" signature="360:418" placeholder="SELECT p FRO..IhkBaseBundle..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composer.json" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/composer.json">
+      <file leaf-file-name="DishController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Controller/DishController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="6" selection-start="903" selection-end="903" vertical-scroll-proportion="0.74509805" vertical-offset="57" max-vertical-offset="1292">
+            <state line="46" column="0" selection-start="1091" selection-end="1091" vertical-scroll-proportion="-7.464286" vertical-offset="551" max-vertical-offset="5263">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppKernel.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <file leaf-file-name="KitchenController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Controller/KitchenController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="45" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="874">
-              <folding />
+            <state line="59" column="0" selection-start="1334" selection-end="1334" vertical-scroll-proportion="1.0515463" vertical-offset="509" max-vertical-offset="5662">
+              <folding>
+                <element signature="e#45#90#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ihk/UserBundle/Entity/User.php">
+      <file leaf-file-name="Kitchen.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/Kitchen.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="608">
-              <folding />
+            <state line="64" column="32" selection-start="1189" selection-end="1189" vertical-scroll-proportion="-6.678571" vertical-offset="1029" max-vertical-offset="4256">
+              <folding>
+                <element signature="e#41#73#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserBundle.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ihk/UserBundle/UserBundle.php">
+      <file leaf-file-name="DishType.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Form/DishType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="6" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="285">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="security.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="28" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="703">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TagController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Controller/TagController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="250" column="51" selection-start="6548" selection-end="6563" vertical-scroll-proportion="0.0" vertical-offset="4750" max-vertical-offset="5320">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="56" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="285">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ihk/UserBundle/Resources/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="63" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="133">
+            <state line="22" column="28" selection-start="678" selection-end="687" vertical-scroll-proportion="-8.142858" vertical-offset="152" max-vertical-offset="931">
               <folding />
             </state>
           </provider>
@@ -146,9 +102,7 @@
         <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/config/validation.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
-        <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Controller/DishController.php" />
         <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Form/DishType.php" />
-        <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/Dish.php" />
         <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/Tag.php" />
         <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views2/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Controller/DefaultController.php" />
@@ -156,12 +110,9 @@
         <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/Rule.php" />
         <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views/Rule/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views/Rule/show.html.twig" />
-        <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views2/Kitchen/show.html.twig" />
         <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views/Kitchen/dishes.html.twig" />
-        <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Controller/KitchenController.php" />
         <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Controller/TagController.php" />
-        <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/DishRepository.php" />
         <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views/Tag/dishes.html.twig" />
         <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/TagRepository.php" />
         <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Controller/CategoryController.php" />
@@ -169,13 +120,26 @@
         <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/public/css/base.css" />
         <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/Ihk/UserBundle/UserBundle.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/Ihk/UserBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/Ihk/UserBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Ihk/UserBundle/Resources/layout.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/Ihk/UserBundle/UserBundle.php" />
+        <option value="$PROJECT_DIR$/src/Ihk/UserBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Ihk/UserBundle/Resources/views/Security/login.html.twig" />
+        <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/Ihk/UserBundle/Entity/Post.php" />
+        <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/DishRepository.php" />
+        <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/AuthorizedInterface.php" />
+        <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/Dish.php" />
+        <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/Kitchen.php" />
+        <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/KitchenRepository.php" />
+        <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Controller/DishController.php" />
+        <option value="$PROJECT_DIR$/src/Ihk/BaseBundle/Controller/KitchenController.php" />
       </list>
     </option>
   </component>
@@ -327,6 +291,144 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="friendsofsymfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user-bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="path" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="path" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="friendsofsymfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user-bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Security" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="path" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="path" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="friendsofsymfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user-bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="path" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="path" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="friendsofsymfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user-bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Security" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="path" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="path" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="friendsofsymfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user-bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="path" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="path" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -379,7 +481,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="path" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="path" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ihk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Security" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="path" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="path" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ihk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -445,7 +607,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
+              <option name="myItemId" value="Ihk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BaseBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="path" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="path" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ihk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BaseBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="path" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="path" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ihk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BaseBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -489,14 +711,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
+    <property name="LayoutCode.rearrangeEntriesTwig" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ihomekitchen\path\src\Ihk\UserBundle\Resources\views\Security" />
       <recent name="C:\xampp\htdocs\ihomekitchen\path\src\Ihk\UserBundle" />
       <recent name="C:\xampp\htdocs\ihomekitchen\path\src\Ihk\BaseBundle\Resources\views\Category" />
       <recent name="C:\xampp\htdocs\ihomekitchen\path\src\Ihk\BaseBundle\Resources\views\Tag" />
       <recent name="C:\xampp\htdocs\ihomekitchen\path\src\Ihk\BaseBundle\Controller" />
-      <recent name="C:\xampp\htdocs\ihomekitchen\path\src\Ihk\BaseBundle\Resources\views\Default" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ihomekitchen\path\src\Ihk\UserBundle\Resources\views" />
     </key>
   </component>
   <component name="RunManager">
@@ -548,6 +774,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -558,11 +785,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -582,66 +808,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/config/validation.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="14" selection-start="72" selection-end="72" vertical-scroll-proportion="0.09677419" vertical-offset="0" max-vertical-offset="589" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Tests/Controller/DefaultControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Tests/Controller/DishControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="52" selection-start="103" selection-end="103" vertical-scroll-proportion="-0.21925133" vertical-offset="199" max-vertical-offset="1159" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Tests/Controller/RuleControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.0659536" vertical-offset="598" max-vertical-offset="1159" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views/Kitchen/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="27" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="1045" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="209" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Controller2/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="39" selection-start="493" selection-end="493" vertical-scroll-proportion="-3.030303" vertical-offset="1909" max-vertical-offset="2470" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="22" selection-start="738" selection-end="738" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="836" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views2/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="23" selection-start="884" selection-end="891" vertical-scroll-proportion="0.22103387" vertical-offset="674" max-vertical-offset="1235" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="28" selection-start="636" selection-end="636" vertical-scroll-proportion="-12.214286" vertical-offset="0" max-vertical-offset="2489" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/config/services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="31" selection-start="2066" selection-end="2066" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1102" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="4" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513" />
@@ -672,19 +838,9 @@
         <state line="16" column="34" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0" vertical-offset="212" max-vertical-offset="1026" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="43" selection-start="110" selection-end="110" vertical-scroll-proportion="0.13547237" vertical-offset="0" max-vertical-offset="561" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views/Rule/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="47" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="1045" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="4" selection-start="1007" selection-end="1564" vertical-scroll-proportion="0.0" vertical-offset="836" max-vertical-offset="1216" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/KitchenRepository.php">
@@ -692,54 +848,14 @@
         <state line="23" column="70" selection-start="348" selection-end="529" vertical-scroll-proportion="0.59358287" vertical-offset="104" max-vertical-offset="665" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views2/Kitchen/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="48" selection-start="1737" selection-end="1737" vertical-scroll-proportion="-3.9642856" vertical-offset="858" max-vertical-offset="1406" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views2/Kitchen/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="17" selection-start="742" selection-end="748" vertical-scroll-proportion="-17.321428" vertical-offset="28" max-vertical-offset="817" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views/Kitchen/dishes.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="81" selection-start="145" selection-end="145" vertical-scroll-proportion="0.101604275" vertical-offset="0" max-vertical-offset="874" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/Tag.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="88" column="23" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.28877005" vertical-offset="1510" max-vertical-offset="2071" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/Dish.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="17" selection-start="670" selection-end="670" vertical-scroll-proportion="0.15329768" vertical-offset="503" max-vertical-offset="5396" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views/Tag/dishes.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="32" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0" vertical-offset="123" max-vertical-offset="855" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/KitchenRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="399" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/TagRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="68" selection-start="401" selection-end="401" vertical-scroll-proportion="0.6096257" vertical-offset="0" max-vertical-offset="561" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/DishRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="4" selection-start="439" selection-end="625" vertical-scroll-proportion="0.49197862" vertical-offset="161" max-vertical-offset="722" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Controller/KitchenController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="249" column="4" selection-start="5700" selection-end="6385" vertical-scroll-proportion="0.0" vertical-offset="4731" max-vertical-offset="5358" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Controller/CategoryController.php">
@@ -757,11 +873,6 @@
         <state line="337" column="0" selection-start="5301" selection-end="5301" vertical-scroll-proportion="0.0" vertical-offset="6156" max-vertical-offset="6745" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views2/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="96" selection-start="1726" selection-end="1785" vertical-scroll-proportion="0.5418895" vertical-offset="855" max-vertical-offset="1862" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views/Tag/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798" />
@@ -772,41 +883,17 @@
         <state line="65" column="73" selection-start="1893" selection-end="1893" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="3933" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Controller/DishController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="70" selection-start="2788" selection-end="2788" vertical-scroll-proportion="0.0" vertical-offset="2128" max-vertical-offset="4807">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views/Dish/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1102">
-          <folding>
-            <marker date="1419460340886" expanded="true" signature="107:963" placeholder="..." />
-            <marker date="1419460340886" expanded="true" signature="123:950" placeholder="..." />
-            <marker date="1419460340886" expanded="true" signature="140:227" placeholder="..." />
-            <marker date="1419460340886" expanded="true" signature="244:335" placeholder="..." />
-            <marker date="1419460340886" expanded="true" signature="352:457" placeholder="..." />
-            <marker date="1419460340886" expanded="true" signature="474:567" placeholder="..." />
-            <marker date="1419460340886" expanded="true" signature="584:677" placeholder="..." />
-            <marker date="1419460340886" expanded="true" signature="694:815" placeholder="..." />
-            <marker date="1419460340886" expanded="true" signature="832:933" placeholder="..." />
-            <marker date="1419460340886" expanded="true" signature="1000:1255" placeholder="..." />
-            <marker date="1419460340886" expanded="true" signature="1009:1099" placeholder="..." />
-            <marker date="1419460340886" expanded="true" signature="1047:1089" placeholder="..." />
-            <marker date="1419460340886" expanded="true" signature="1108:1212" placeholder="..." />
-            <marker date="1419460340886" expanded="true" signature="1172:1202" placeholder="..." />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1102" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="44" selection-start="844" selection-end="844" vertical-scroll-proportion="-10.982269" vertical-offset="6555" max-vertical-offset="35625" />
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="44" selection-start="844" selection-end="844" vertical-scroll-proportion="-10.982269" vertical-offset="6555" max-vertical-offset="35625" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/AppBundle.php">
@@ -816,35 +903,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="45" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="874">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="19" selection-start="2272" selection-end="2272" vertical-scroll-proportion="0.83870965" vertical-offset="988" max-vertical-offset="1596" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="28" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
-          <folding />
-        </state>
+        <state line="22" column="45" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="874" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Controller/TagController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="250" column="51" selection-start="6548" selection-end="6563" vertical-scroll-proportion="0.0" vertical-offset="4750" max-vertical-offset="5320">
-          <folding />
-        </state>
+        <state line="250" column="51" selection-start="6548" selection-end="6563" vertical-scroll-proportion="0.0" vertical-offset="4750" max-vertical-offset="5320" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Ihk/UserBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="63" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="133">
-          <folding />
-        </state>
+        <state line="1" column="63" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="133" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
@@ -854,24 +923,219 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views/Kitchen/dishes.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="25" selection-start="12" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="874" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.16323024" vertical-offset="0" max-vertical-offset="582" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="10" selection-start="280" selection-end="280" vertical-scroll-proportion="0.2611684" vertical-offset="0" max-vertical-offset="582" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views/Tag/dishes.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="17" selection-start="342" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="855">
+          <folding>
+            <marker date="1420299512187" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1420299512187" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1420299512187" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1420299512187" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1420299512187" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1420299512187" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1420299512187" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1420299512187" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ihk/UserBundle/UserBundle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="285">
+        <state line="10" column="31" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="361">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ihk/UserBundle/Entity/User.php">
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="608">
+        <state line="22" column="24" selection-start="839" selection-end="839" vertical-scroll-proportion="0.74509805" vertical-offset="0" max-vertical-offset="703" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ihk/UserBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="9" selection-start="68" selection-end="73" vertical-scroll-proportion="0.101604275" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ihk/UserBundle/Resources/views/Security/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="25" selection-start="102" selection-end="118" vertical-scroll-proportion="-2.0357144" vertical-offset="19" max-vertical-offset="627">
+          <folding>
+            <marker date="1424031262409" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424031262409" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424031262409" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1424031262409" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="39" selection-start="876" selection-end="876" vertical-scroll-proportion="-5.857143" vertical-offset="330" max-vertical-offset="1311">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="6" selection-start="903" selection-end="903" vertical-scroll-proportion="0.74509805" vertical-offset="57" max-vertical-offset="1292">
+        <state line="26" column="16" selection-start="920" selection-end="920" vertical-scroll-proportion="-7.464286" vertical-offset="285" max-vertical-offset="1292">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/User/UserCheckerInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="10" selection-start="493" selection-end="493" vertical-scroll-proportion="0.33868092" vertical-offset="57" max-vertical-offset="665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/UserInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="10" selection-start="492" selection-end="492" vertical-scroll-proportion="-0.15864527" vertical-offset="317" max-vertical-offset="4237">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/Dish.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="236" column="32" selection-start="3686" selection-end="3698" vertical-scroll-proportion="0.33333334" vertical-offset="4297" max-vertical-offset="5415">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ihk/UserBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="7" selection-start="245" selection-end="245" vertical-scroll-proportion="0.47058824" vertical-offset="2" max-vertical-offset="608">
+          <folding>
+            <element signature="e#80#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="312" selection-end="312" vertical-scroll-proportion="0.43606558" vertical-offset="0" max-vertical-offset="703">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="16" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="1615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="302" column="20" selection-start="10065" selection-end="10065" vertical-scroll-proportion="0.3493761" vertical-offset="5162" max-vertical-offset="6574">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="12" selection-start="3862" selection-end="3862" vertical-scroll-proportion="0.028520498" vertical-offset="1637" max-vertical-offset="15713">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Persistence/ObjectManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="20" selection-start="4339" selection-end="4339" vertical-scroll-proportion="0.3493761" vertical-offset="1932" max-vertical-offset="3021">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/common/lib/Doctrine/Common/Persistence/AbstractManagerRegistry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="238" column="63" selection-start="6106" selection-end="6106" vertical-scroll-proportion="0.5864528" vertical-offset="3889" max-vertical-offset="4731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/DishRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="23" selection-start="421" selection-end="430" vertical-scroll-proportion="0.41237113" vertical-offset="140" max-vertical-offset="722">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Form/DishType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="28" selection-start="678" selection-end="687" vertical-scroll-proportion="-8.142858" vertical-offset="152" max-vertical-offset="931">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/Kitchen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="32" selection-start="1189" selection-end="1189" vertical-scroll-proportion="-6.678571" vertical-offset="1029" max-vertical-offset="4256">
+          <folding>
+            <element signature="e#41#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Entity/KitchenRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="36" selection-start="275" selection-end="291" vertical-scroll-proportion="-9.5" vertical-offset="0" max-vertical-offset="665">
+          <folding>
+            <marker date="1424134691025" expanded="true" signature="360:443" placeholder="SELECT p FRO..IhkBaseBundle..." />
+            <marker date="1424134691025" expanded="true" signature="360:418" placeholder="SELECT p FRO..IhkBaseBundle..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Controller/DishController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1091" selection-end="1091" vertical-scroll-proportion="-7.464286" vertical-offset="551" max-vertical-offset="5263">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ihk/BaseBundle/Controller/KitchenController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="0" selection-start="1334" selection-end="1334" vertical-scroll-proportion="1.0515463" vertical-offset="509" max-vertical-offset="5662">
+          <folding>
+            <element signature="e#45#90#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

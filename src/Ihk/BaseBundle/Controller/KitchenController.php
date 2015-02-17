@@ -51,6 +51,10 @@ class KitchenController extends Controller
 
 		if ($form->isValid()) {
 			$em = $this->getDoctrine()->getManager();
+
+			$ownerId = $this->getUser()->getId();
+			$entity->setOwnerId($ownerId);
+
 			$em->persist($entity);
 			$em->flush();
 
@@ -142,6 +146,10 @@ class KitchenController extends Controller
 			throw $this->createNotFoundException('Unable to find Kitchen entity.');
 		}
 
+		if (!$entity->isOwner($this->getUser())) {
+			throw $this->createAccessDeniedException();
+		}
+
 		$editForm   = $this->createEditForm($entity);
 		$deleteForm = $this->createDeleteForm($id);
 
@@ -188,6 +196,10 @@ class KitchenController extends Controller
 			throw $this->createNotFoundException('Unable to find Kitchen entity.');
 		}
 
+		if (!$entity->isOwner($this->getUser())) {
+			throw $this->createAccessDeniedException();
+		}
+
 		$deleteForm = $this->createDeleteForm($id);
 		$editForm   = $this->createEditForm($entity);
 		$editForm->handleRequest($request);
@@ -222,6 +234,10 @@ class KitchenController extends Controller
 
 			if (!$entity) {
 				throw $this->createNotFoundException('Unable to find Kitchen entity.');
+			}
+
+			if (!$entity->isOwner($this->getUser())) {
+				throw $this->createAccessDeniedException();
 			}
 
 			$em->remove($entity);

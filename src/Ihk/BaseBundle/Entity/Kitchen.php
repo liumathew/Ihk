@@ -3,6 +3,7 @@
 namespace Ihk\BaseBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Ihk\UserBundle\Entity\User;
 
 /**
  * Kitchen
@@ -55,6 +56,33 @@ class Kitchen
      * @ORM\Column(name="address", type="string", length=255, nullable=true)
      */
     private $address;
+
+	/**
+	 * @var string
+	 *
+	 * @ORM\Column(name="owner_id", type="string", length=32, unique=true)
+	 */
+	private $ownerId;//todo:add unique constraint and access denied exception handler
+
+	/**
+	 * @param string $ownerId
+	 *
+	 * @return Kitchen
+	 */
+	public function setOwnerId($ownerId)
+	{
+		$this->ownerId = $ownerId;
+
+		return $this;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getOwnerId()
+	{
+		return $this->ownerId;
+	}
 
 
     /**
@@ -181,4 +209,10 @@ class Kitchen
     {
         return $this->address;
     }
+
+	public function isOwner(User $user = null)
+	{
+		return $user && $user->getId() == $this->getOwnerId();
+	}
+
 }
