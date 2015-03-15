@@ -18,189 +18,155 @@ use Ihk\BaseBundle\Form\DishType;
 class DishController extends Controller
 {
 
-    /**
-     * Lists all Dish entities.
-     *
-     * @Route("/", name="dish")
-     * @Method("GET")
-     * @Template()
-     */
-    public function indexAction()
-    {
-        $em = $this->getDoctrine()->getManager();
+	/**
+	 * Lists all Dish entities.
+	 *
+	 * @Route("/", name="dish")
+	 * @Method("GET")
+	 * @Template()
+	 */
+	public function indexAction()
+	{
+		$em = $this->getDoctrine()->getManager();
 
-        $entities = $em->getRepository('IhkBaseBundle:Dish')->findAll();
+		$entities = $em->getRepository('IhkBaseBundle:Dish')->findAll();
 
-        return array(
-            'entities' => $entities,
-        );
-    }
-    /**
-     * Creates a new Dish entity.
-     *
-     * @Route("/", name="dish_create")
-     * @Method("POST")
-     * @Template("IhkBaseBundle:Dish:new.html.twig")
-     */
-    public function createAction(Request $request)
-    {
+		return array(
+			'entities' => $entities,
+		);
+	}
 
-        $entity = new Dish();
-        $form = $this->createCreateForm($entity);
-        $form->handleRequest($request);
+	/**
+	 * Creates a new Dish entity.
+	 *
+	 * @Route("/", name="dish_create")
+	 * @Method("POST")
+	 * @Template("IhkBaseBundle:Dish:new.html.twig")
+	 */
+	public function createAction(Request $request)
+	{
+		/** @var \Ihk\BaseBundle\Helper\AvailableSpaceHelper $availableSpaceHelper */
+		$availableSpaceHelper = $this->container->get('ihk.available_space_service');
 
-        if ($form->isValid()) {
+		if ($availableSpaceHelper->isThereEnoughSpace() === false) {
+			throw new \Exception('Unable to accept any new file for the moment.', 500, 'Internal Server Error');
+		}
+
+		$entity = new Dish();
+		$form   = $this->createCreateForm($entity);
+		$form->handleRequest($request);
+
+		if ($form->isValid()) {
 			$em = $this->getDoctrine()->getManager();
 
 			$ownerId = $this->getUser()->getId();
 			$kitchen = $em->getRepository('IhkBaseBundle:Kitchen')->findOneByOwnerId($ownerId);
+
 			$kitchenId = $kitchen->getId();
 			$entity->setKitchenId($kitchenId);
 
-            $em->persist($entity);
-            $em->flush();
+			/** @var \Symfony\Component\HttpFoundation\File\UploadedFile $file */
+			$file = $request->files->getIterator()->current()['photo'];
+			if ($file) {
+				/** @var \Ihk\BaseBundle\Helper\UploadFileHelper $uploadFileHelper */
+				$uploadFileHelper = $this->container->get('ihk.upload_file_service');
+				$photoPath        = $uploadFileHelper->upload($file);
 
-            return $this->redirect($this->generateUrl('dish_show', array('id' => $entity->getId())));
-        }
+				$entity->setPhoto($photoPath);
+			}
 
-        return array(
-            'entity' => $entity,
-            'form'   => $form->createView(),
-        );
-    }
-
-    /**
-     * Creates a form to create a Dish entity.
-     *
-     * @param Dish $entity The entity
-     *
-     * @return \Symfony\Component\Form\Form The form
-     */
-    private function createCreateForm(Dish $entity)
-    {
+			$em->persist($entity);
+			$em->flush();
 
 
-        $form = $this->createForm(new DishType(), $entity, array(
-            'action' => $this->generateUrl('dish_create'),
-            'method' => 'POST',
-        ));
-
-        $form->add('submit', 'submit', array('label' => 'Create'));
-
-        return $form;
-    }
-
-    /**
-     * Displays a form to create a new Dish entity.
-     *
-     * @Route("/new", name="dish_new")
-     * @Method("GET")
-     * @Template()
-     */
-    public function newAction()
-    {
-        $entity = new Dish();
-        $form   = $this->createCreateForm($entity);
-
-        return array(
-            'entity' => $entity,
-            'form'   => $form->createView(),
-        );
-    }
-
-    /**
-     * Finds and displays a Dish entity.
-     *
-     * @Route("/{id}", name="dish_show")
-     * @Method("GET")
-     * @Template()
-     */
-    public function showAction($id)
-    {
-        $em = $this->getDoctrine()->getManager();
-
-        $entity = $em->getRepository('IhkBaseBundle:Dish')->find($id);
-
-        if (!$entity) {
-            throw $this->createNotFoundException('Unable to find Dish entity.');
-        }
-
-        $deleteForm = $this->createDeleteForm($id);
-
-        return array(
-            'entity'      => $entity,
-            'delete_form' => $deleteForm->createView(),
-        );
-    }
-
-    /**
-     * Displays a form to edit an existing Dish entity.
-     *
-     * @Route("/{id}/edit", name="dish_edit")
-     * @Method("GET")
-     * @Template()
-     */
-    public function editAction($id)
-    {
-        $em = $this->getDoctrine()->getManager();
-
-        $entity = $em->getRepository('IhkBaseBundle:Dish')->find($id);
-
-        if (!$entity) {
-            throw $this->createNotFoundException('Unable to find Dish entity.');
-        }
-
-		$kitchenId = $entity->getKitchenId();
-		$kitchen   = $em->getRepository('IhkBaseBundle:Kitchen')->find($kitchenId);
-
-		if (!$kitchen->isOwner($this->getUser())) {
-			throw $this->createAccessDeniedException();
+			return $this->redirect($this->generateUrl('dish_show', array('id' => $entity->getId())));
 		}
 
-        $editForm = $this->createEditForm($entity);
-        $deleteForm = $this->createDeleteForm($id);
+		return array(
+			'entity' => $entity,
+			'form'   => $form->createView(),
+		);
+	}
 
-        return array(
-            'entity'      => $entity,
-            'edit_form'   => $editForm->createView(),
-            'delete_form' => $deleteForm->createView(),
-        );
-    }
+	/**
+	 * Creates a form to create a Dish entity.
+	 *
+	 * @param Dish $entity The entity
+	 *
+	 * @return \Symfony\Component\Form\Form The form
+	 */
+	private function createCreateForm(Dish $entity)
+	{
 
-    /**
-    * Creates a form to edit a Dish entity.
-    *
-    * @param Dish $entity The entity
-    *
-    * @return \Symfony\Component\Form\Form The form
-    */
-    private function createEditForm(Dish $entity)
-    {
-        $form = $this->createForm(new DishType(), $entity, array(
-            'action' => $this->generateUrl('dish_update', array('id' => $entity->getId())),
-            'method' => 'PUT',
-        ));
+		$form = $this->createForm(new DishType(), $entity, array(
+			'action' => $this->generateUrl('dish_create'),
+			'method' => 'POST',
+		));
 
-        $form->add('submit', 'submit', array('label' => 'Update'));
+		$form->add('submit', 'submit', array('label' => 'Create'));
 
-        return $form;
-    }
-    /**
-     * Edits an existing Dish entity.
-     *
-     * @Route("/{id}", name="dish_update")
-     * @Method("PUT")
-     * @Template("IhkBaseBundle:Dish:edit.html.twig")
-     */
-    public function updateAction(Request $request, $id)
-    {
+		return $form;
+	}
+
+	/**
+	 * Displays a form to create a new Dish entity.
+	 *
+	 * @Route("/new", name="dish_new")
+	 * @Method("GET")
+	 * @Template()
+	 */
+	public function newAction()
+	{
+		$entity = new Dish();
+		$form   = $this->createCreateForm($entity);
+
+		return array(
+			'entity' => $entity,
+			'form'   => $form->createView(),
+		);
+	}
+
+	/**
+	 * Finds and displays a Dish entity.
+	 *
+	 * @Route("/{id}", name="dish_show")
+	 * @Method("GET")
+	 * @Template()
+	 */
+	public function showAction($id)
+	{
 		$em = $this->getDoctrine()->getManager();
 
-        $entity = $em->getRepository('IhkBaseBundle:Dish')->find($id);
+		$entity = $em->getRepository('IhkBaseBundle:Dish')->find($id);
 
-        if (!$entity) {
-            throw $this->createNotFoundException('Unable to find Dish entity.');
-        }
+		if (!$entity) {
+			throw $this->createNotFoundException('Unable to find Dish entity.');
+		}
+
+		$deleteForm = $this->createDeleteForm($id);
+
+		return array(
+			'entity'      => $entity,
+			'delete_form' => $deleteForm->createView(),
+		);
+	}
+
+	/**
+	 * Displays a form to edit an existing Dish entity.
+	 *
+	 * @Route("/{id}/edit", name="dish_edit")
+	 * @Method("GET")
+	 * @Template()
+	 */
+	public function editAction($id)
+	{
+		$em = $this->getDoctrine()->getManager();
+
+		$entity = $em->getRepository('IhkBaseBundle:Dish')->find($id);
+
+		if (!$entity) {
+			throw $this->createNotFoundException('Unable to find Dish entity.');
+		}
 
 		$kitchenId = $entity->getKitchenId();
 		$kitchen   = $em->getRepository('IhkBaseBundle:Kitchen')->find($kitchenId);
@@ -209,40 +175,106 @@ class DishController extends Controller
 			throw $this->createAccessDeniedException();
 		}
 
-        $deleteForm = $this->createDeleteForm($id);
-        $editForm = $this->createEditForm($entity);
-        $editForm->handleRequest($request);
+		$editForm   = $this->createEditForm($entity);
+		$deleteForm = $this->createDeleteForm($id);
 
-        if ($editForm->isValid()) {
-            $em->flush();
+		return array(
+			'entity'      => $entity,
+			'edit_form'   => $editForm->createView(),
+			'delete_form' => $deleteForm->createView(),
+		);
+	}
 
-            return $this->redirect($this->generateUrl('dish_edit', array('id' => $id)));
-        }
+	/**
+	 * Creates a form to edit a Dish entity.
+	 *
+	 * @param Dish $entity The entity
+	 *
+	 * @return \Symfony\Component\Form\Form The form
+	 */
+	private function createEditForm(Dish $entity)
+	{
+		$form = $this->createForm(new DishType(), $entity, array(
+			'action' => $this->generateUrl('dish_update', array('id' => $entity->getId())),
+			'method' => 'PUT',
+		));
 
-        return array(
-            'entity'      => $entity,
-            'edit_form'   => $editForm->createView(),
-            'delete_form' => $deleteForm->createView(),
-        );
-    }
-    /**
-     * Deletes a Dish entity.
-     *
-     * @Route("/{id}", name="dish_delete")
-     * @Method("DELETE")
-     */
-    public function deleteAction(Request $request, $id)
-    {
-        $form = $this->createDeleteForm($id);
-        $form->handleRequest($request);
+		$form->add('submit', 'submit', array('label' => 'Update'));
 
-        if ($form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $entity = $em->getRepository('IhkBaseBundle:Dish')->find($id);
+		return $form;
+	}
 
-            if (!$entity) {
-                throw $this->createNotFoundException('Unable to find Dish entity.');
-            }
+	/**
+	 * Edits an existing Dish entity.
+	 *
+	 * @Route("/{id}", name="dish_update")
+	 * @Method("PUT")
+	 * @Template("IhkBaseBundle:Dish:edit.html.twig")
+	 */
+	public function updateAction(Request $request, $id)
+	{
+
+		$em = $this->getDoctrine()->getManager();
+
+		$entity = $em->getRepository('IhkBaseBundle:Dish')->find($id);
+
+		if (!$entity) {
+			throw $this->createNotFoundException('Unable to find Dish entity.');
+		}
+
+		$kitchenId = $entity->getKitchenId();
+		$kitchen   = $em->getRepository('IhkBaseBundle:Kitchen')->find($kitchenId);
+
+		if (!$kitchen->isOwner($this->getUser())) {
+			throw $this->createAccessDeniedException();
+		}
+
+		/** @var \Symfony\Component\HttpFoundation\File\UploadedFile $file */
+		$file = $request->files->getIterator()->current()['photo'];
+
+		if ($file) {
+			/** @var \Ihk\BaseBundle\Helper\UploadFileHelper $uploadFileHelper */
+			$uploadFileHelper = $this->container->get('ihk.upload_file_service');
+			$photoPath        = $uploadFileHelper->upload($file);
+
+			$entity->setPhoto($photoPath);
+		}
+		$deleteForm = $this->createDeleteForm($id);
+		$editForm   = $this->createEditForm($entity);
+		$editForm->handleRequest($request);
+
+		if ($editForm->isValid()) {
+			$em->persist($entity);
+			$em->flush();
+
+			return $this->redirect($this->generateUrl('dish_edit', array('id' => $id)));
+		}
+
+		return array(
+			'entity'      => $entity,
+			'edit_form'   => $editForm->createView(),
+			'delete_form' => $deleteForm->createView(),
+		);
+	}
+
+	/**
+	 * Deletes a Dish entity.
+	 *
+	 * @Route("/{id}", name="dish_delete")
+	 * @Method("DELETE")
+	 */
+	public function deleteAction(Request $request, $id)
+	{
+		$form = $this->createDeleteForm($id);
+		$form->handleRequest($request);
+
+		if ($form->isValid()) {
+			$em     = $this->getDoctrine()->getManager();
+			$entity = $em->getRepository('IhkBaseBundle:Dish')->find($id);
+
+			if (!$entity) {
+				throw $this->createNotFoundException('Unable to find Dish entity.');
+			}
 
 			$kitchenId = $entity->getKitchenId();
 			$kitchen   = $em->getRepository('IhkBaseBundle:Kitchen')->find($kitchenId);
@@ -250,28 +282,35 @@ class DishController extends Controller
 			if (!$kitchen->isOwner($this->getUser())) {
 				throw $this->createAccessDeniedException();
 			}
+			/** @var \Ihk\BaseBundle\Helper\UploadFileHelper $uploadFileHelper */
+			$uploadFileHelper = $this->container->get('ihk.upload_file_service');
+			$photo = $entity->getPhoto();
 
-            $em->remove($entity);
-            $em->flush();
-        }
+			if(!$uploadFileHelper->removeUpload($photo) )
+			{
+				throw new \Exception('Unable to remove photo for the moment.', 500, 'Internal Server Error');
+			}
 
-        return $this->redirect($this->generateUrl('dish'));
-    }
+			$em->remove($entity);
+			$em->flush();
+		}
 
-    /**
-     * Creates a form to delete a Dish entity by id.
-     *
-     * @param mixed $id The entity id
-     *
-     * @return \Symfony\Component\Form\Form The form
-     */
-    private function createDeleteForm($id)
-    {
-        return $this->createFormBuilder()
-            ->setAction($this->generateUrl('dish_delete', array('id' => $id)))
-            ->setMethod('DELETE')
-            ->add('submit', 'submit', array('label' => 'Delete'))
-            ->getForm()
-        ;
-    }
+		return $this->redirect($this->generateUrl('dish'));
+	}
+
+	/**
+	 * Creates a form to delete a Dish entity by id.
+	 *
+	 * @param mixed $id The entity id
+	 *
+	 * @return \Symfony\Component\Form\Form The form
+	 */
+	private function createDeleteForm($id)
+	{
+		return $this->createFormBuilder()
+			->setAction($this->generateUrl('dish_delete', array('id' => $id)))
+			->setMethod('DELETE')
+			->add('submit', 'submit', array('label' => 'Delete'))
+			->getForm();
+	}
 }

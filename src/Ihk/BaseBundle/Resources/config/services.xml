@@ -3,7 +3,16 @@
 <container xmlns="http://symfony.com/schema/dic/services"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
-
+<services>
+	<service id="ihk.available_space_service" class="Ihk\BaseBundle\Helper\AvailableSpaceHelper">
+		<argument>%settings.disk_space.lower_threshold%</argument>
+		<argument>%files_storage_folder%</argument>
+	</service>
+	<service id="ihk.upload_file_service" class="Ihk\BaseBundle\Helper\UploadFileHelper">
+		<argument>%files_storage_folder%</argument>
+		<argument>%files_web_folder%</argument>
+	</service>
+</services>
 
     <!--<services>-->
         <!--<service id="ihk_base.example" class="Ihk\BaseBundle\Example">-->

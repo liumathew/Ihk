@@ -3,7 +3,9 @@
 {% block body -%}
     <h1>Dish edit</h1>
 
+	<img src="{{ asset(entity.photo) }}">
     {{ form(edit_form) }}
+
 
         <ul class="record_actions">
     <li>

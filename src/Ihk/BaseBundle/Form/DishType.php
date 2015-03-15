@@ -17,7 +17,8 @@ class DishType extends AbstractType
         $builder
             ->add('name')
             ->add('description')
-            ->add('photo','text',array())//            ->add('photo','file', array('label' => 'Dish Photo', 'required' => false))
+            //->add('photo','text',array())
+			->add('photo','file', array('label' => 'Upload Dish Photo',  'mapped'  => false, 'required' => false))
 			->add('score')
             ->add('createdAt')
             ->add('kitchenId')

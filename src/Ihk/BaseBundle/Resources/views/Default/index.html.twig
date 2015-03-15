@@ -13,9 +13,9 @@
 {% block leftarea %}
 	<div class="row">
 		<div class="col-md-3">
-			tags:
+
 			{% for tag in tags %}
-				<ul>
+				<ul class="nav nav-sidebar">
 					<li>
 						<a class="" href="{{ path('tag_show_dishes', { 'id': tag.id }) }}">
 							<span class="">{{ tag.name }}</span>
@@ -86,7 +86,7 @@
 					<li>
 						<div class="dishes-grid">
 							<div class="cover">
-								<img src="../upload/Koala.jpg" width="140" height="110" class="img-thumbnail"
+								<img src="../upload/Koala.jpg" class="img-thumbnail"
 									 alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera">
 							</div>
 							<div class="dish-name">
@@ -100,7 +100,7 @@
 					<li>
 						<div class="dishes-grid">
 							<div class="cover">
-								<img src="../upload/Koala.jpg" alt="" width="140" height="110" class="img-thumbnail">
+								<img src="../upload/Koala.jpg" alt=""  class="img-thumbnail">
 							</div>
 							<div class="dish-name">
 								<a href="">dishname</a>
@@ -113,7 +113,7 @@
 					<li>
 						<div class="dishes-grid">
 							<div class="cover">
-								<img src="../upload/Koala.jpg" alt="" width="140" height="110" class="img-thumbnail">
+								<img src="../upload/Koala.jpg" alt=""  class="img-thumbnail">
 							</div>
 							<div class="dish-name">
 								<a href="">dishname</a>
@@ -126,7 +126,7 @@
 					<li>
 						<div class="dishes-grid">
 							<div class="cover">
-								<img src="../upload/Koala.jpg" alt="" width="140" height="110" class="img-thumbnail">
+								<img src="../upload/Koala.jpg" alt=""  class="img-thumbnail">
 							</div>
 							<div class="dish-name">
 								<a href="">dishname</a>
@@ -139,7 +139,7 @@
 					<li>
 						<div class="dishes-grid">
 							<div class="cover">
-								<img src="../upload/Koala.jpg" alt="" width="140" height="110" class="img-thumbnail">
+								<img src="../upload/Koala.jpg" alt=""  class="img-thumbnail">
 							</div>
 							<div class="dish-name">
 								<a href="">dishname</a>
@@ -152,7 +152,7 @@
 					<li>
 						<div class="dishes-grid">
 							<div class="cover">
-								<img src="../upload/Koala.jpg" alt="" width="140" height="110" class="img-thumbnail">
+								<img src="../upload/Koala.jpg" alt=""  class="img-thumbnail">
 							</div>
 							<div class="dish-name">
 								<a href="">dishname</a>
