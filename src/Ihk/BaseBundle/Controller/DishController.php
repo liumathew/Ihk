@@ -229,21 +229,22 @@ class DishController extends Controller
 			throw $this->createAccessDeniedException();
 		}
 
-		/** @var \Symfony\Component\HttpFoundation\File\UploadedFile $file */
-		$file = $request->files->getIterator()->current()['photo'];
 
-		if ($file) {
-			/** @var \Ihk\BaseBundle\Helper\UploadFileHelper $uploadFileHelper */
-			$uploadFileHelper = $this->container->get('ihk.upload_file_service');
-			$photoPath        = $uploadFileHelper->upload($file);
-
-			$entity->setPhoto($photoPath);
-		}
 		$deleteForm = $this->createDeleteForm($id);
 		$editForm   = $this->createEditForm($entity);
 		$editForm->handleRequest($request);
 
 		if ($editForm->isValid()) {
+			/** @var \Symfony\Component\HttpFoundation\File\UploadedFile $file */
+			$file = $request->files->getIterator()->current()['photo'];
+
+			if ($file) {
+				/** @var \Ihk\BaseBundle\Helper\UploadFileHelper $uploadFileHelper */
+				$uploadFileHelper = $this->container->get('ihk.upload_file_service');
+				$photoPath        = $uploadFileHelper->upload($file);
+
+				$entity->setPhoto($photoPath);
+			}
 			$em->persist($entity);
 			$em->flush();
 
