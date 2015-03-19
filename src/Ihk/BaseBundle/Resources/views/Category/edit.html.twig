@@ -1,6 +1,16 @@
-{% extends '::base.html.twig' %}
+{% extends 'IhkBaseBundle::base.html.twig' %}
 
-{% block body -%}
+{% block title %}
+	 - IHomeKitchen
+{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	{#<link rel="stylesheet" href="{{ asset('bundles/ibwjobeet/css/job.css') }}" type="text/css" media="all" />#}
+{% endblock %}
+
+
+{% block leftarea %}
     <h1>Category edit</h1>
 
     {{ form(edit_form) }}

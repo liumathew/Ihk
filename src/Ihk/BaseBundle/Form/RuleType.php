@@ -20,6 +20,7 @@ class RuleType extends AbstractType
             ->add('starttime')
             ->add('endtime')
             ->add('address')
+			->add('kitchenId');
         ;
     }
     

@@ -139,6 +139,10 @@ class DishController extends Controller
 
 		$entity = $em->getRepository('IhkBaseBundle:Dish')->find($id);
 
+		$kitchenId = $entity->getKitchenId();
+		$kitchen   = $em->getRepository('IhkBaseBundle:Kitchen')->find($kitchenId);
+		$rules = $em->getRepository('IhkBaseBundle:Rule')->findByKitchenId($kitchenId);
+
 		if (!$entity) {
 			throw $this->createNotFoundException('Unable to find Dish entity.');
 		}
@@ -148,6 +152,8 @@ class DishController extends Controller
 		return array(
 			'entity'      => $entity,
 			'delete_form' => $deleteForm->createView(),
+			'kitchen'		=> $kitchen,
+			'rules' => $rules,
 		);
 	}
 

@@ -12,4 +12,12 @@ use Doctrine\ORM\EntityRepository;
  */
 class RuleRepository extends EntityRepository
 {
+	public function findByKitchenId($id)
+	{
+		return $this->getEntityManager()
+			->createQuery(
+				'SELECT p FROM IhkBaseBundle:Rule p where p.kitchenId ='.$id
+			)
+			->getResult();
+	}
 }

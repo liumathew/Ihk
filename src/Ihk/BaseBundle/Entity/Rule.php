@@ -56,6 +56,32 @@ class Rule
      */
     private $address;
 
+	/**
+	 * @var int
+	 *
+	 * @ORM\Column(name="kitchen_id", type="integer")
+	 */
+	private $kitchenId;
+
+	/**
+	 * @param $kitchenId
+	 *
+	 * @return $this
+	 */
+	public function setKitchenId($kitchenId)
+	{
+		$this->kitchenId = $kitchenId;
+
+		return $this;
+	}
+
+	/**
+	 * @return int
+	 */
+	public function getKitchenId()
+	{
+		return $this->kitchenId;
+	}
 
     /**
      * Get id

@@ -1,6 +1,16 @@
-{% extends '::base.html.twig' %}
+{% extends 'IhkBaseBundle::base.html.twig' %}
 
-{% block body -%}
+{% block title %}
+	dish show - IHomeKitchen
+{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	{#<link rel="stylesheet" href="{{ asset('bundles/ibwjobeet/css/job.css') }}" type="text/css" media="all" />#}
+{% endblock %}
+
+
+{% block leftarea %}
     <h1>Dish</h1>
 
     <table class="record_properties">
@@ -19,7 +29,12 @@
             </tr>
             <tr>
                 <th>Photo</th>
-                <td>{{ entity.photo }}<img src="{{ asset(entity.photo) }}"></td>
+                <td>{{ entity.photo }}
+					{#<img class="img-responsive" src="{{ asset(entity.photo) }}">#}
+					{#<img class="img-circle" src="{{ asset(entity.photo) }}">#}
+					<img class="img-thumbnail" src="{{ asset(entity.photo) }}">
+					{#<img class="img-rounded" src="{{ asset(entity.photo) }}">#}
+				</td>
             </tr>
             <tr>
                 <th>Score</th>
@@ -49,4 +64,19 @@
     </li>
     <li>{{ form(delete_form) }}</li>
 </ul>
+{% endblock %}
+
+{% block rightarea %}
+	{{ kitchen.name }}
+	{% for rule in rules %}
+		<span class="">{{ rule.price }}</span>
+		<span class="">{{ rule.dayInWeek }}</span>
+		{#<ul class="nav nav-sidebar">#}
+			{#<li>#}
+				{#<a class="" href="{{ path('tag_show_dishes', { 'id': tag.id }) }}">#}
+					{#<span class="">{{ tag.name }}</span>#}
+				{#</a>#}
+			{#</li>#}
+		{#</ul>#}
+	{% endfor %}
 {% endblock %}
